@@ -54,7 +54,7 @@ class _RestaurantListScreenState extends ConsumerState<RestaurantListScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: SizedBox(
-              width: 200,
+              width: 400,
               child: TextField(
                 onChanged: (value) {
                   setState(() {
@@ -79,7 +79,7 @@ class _RestaurantListScreenState extends ConsumerState<RestaurantListScreen> {
               fit: BoxFit.cover,
             ),
           ),
-          // Foreground Content
+          // Restaurant List
           restaurants.when(
             data: (data) {
               final filteredRestaurants = data
@@ -91,8 +91,30 @@ class _RestaurantListScreenState extends ConsumerState<RestaurantListScreen> {
                 itemCount: filteredRestaurants.length,
                 itemBuilder: (context, index) {
                   final restaurant = filteredRestaurants[index];
-                  return ListTile(
-                    title: Text(restaurant.name),
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 5), 
+                    child: Center(
+                      child: Container(
+                        padding: EdgeInsets.all(10),
+                        constraints: BoxConstraints(
+                          maxWidth: 500, 
+                        ),
+                        decoration: BoxDecoration(
+                          color: _getBackgroundColor(index), // Background color for each item
+                          borderRadius: BorderRadius.circular(8), 
+                        ),
+                        child: Center( 
+                          child: Text(
+                            restaurant.name,
+                            style: TextStyle(
+                              color: Colors.white, 
+                              fontSize: 20, 
+                            ),
+                            textAlign: TextAlign.center, 
+                          ),
+                        ),
+                      ),
+                    ),
                   );
                 },
               );
@@ -103,5 +125,11 @@ class _RestaurantListScreenState extends ConsumerState<RestaurantListScreen> {
         ],
       ),
     );
+  }
+
+  // Helper function to provide alternating background colors
+  Color _getBackgroundColor(int index) {
+    List<Color> colors = [const Color.fromARGB(255, 16, 37, 27)];
+    return colors[index % colors.length]; 
   }
 }

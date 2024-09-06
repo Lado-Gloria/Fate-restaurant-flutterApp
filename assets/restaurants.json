@@ -18,11 +18,35 @@
         "id": 4,
         "name": "Tasty Burger",
         "cuisine": "American"
-    }
-    ,
+    },
     {
         "id": 5,
         "name": "Galito's Burger",
         "cuisine": "American"
+    },
+    {
+        "id": 6,
+        "name": "Sushi Express",
+        "cuisine": "Japanese"
+    },
+    {
+        "id": 7,
+        "name": "Curry Palace",
+        "cuisine": "Indian"
+    },
+    {
+        "id": 8,
+        "name": "Golden Dragon",
+        "cuisine": "Chinese"
+    },
+    {
+        "id": 9,
+        "name": "The Green Table",
+        "cuisine": "Vegetarian"
+    },
+    {
+        "id": 10,
+        "name": "El Gaucho Steakhouse",
+        "cuisine": "Argentinian"
     }
 ]
