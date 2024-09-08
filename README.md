@@ -1,18 +1,38 @@
-# Fate-restaurant-flutterApp
+# Fate Restaurant Flutter App
 This Flutter app showcases a restaurant listing feature with Riverpod for state management. It loads restaurant data from a local JSON file, displays it in a scrollable list, and includes a search function. The UI is enhanced with a background image for a visually engaging experience.
-# fate_flutter_app
 
-A new Flutter project.
+# Overview
+The Fate Restaurant Flutter App is a sample project that demonstrates how to:
 
-## Getting Started
+Use Riverpod for state management.
+Load data from a local JSON file.
+Display a scrollable list of restaurant items.
+Implement a search functionality.
+Design a visually engaging UI with a background image.
+This app serves as a foundation for building more complex restaurant applications while familiarizing you with Flutter, Riverpod, and JSON data parsing.
 
-This project is a starting point for a Flutter application.
+# Features
+State Management: Managed using Riverpod.
+Local Data: Restaurant data is loaded from a local JSON file.
+Search Functionality: Users can search restaurants by name.
+Custom UI: Includes background images to enhance the visual experience.
+Installation
+Prerequisites
+Before you start, ensure you have the following installed on your machine:
 
-A few resources to get you started if this is your first Flutter project:
+# Flutter SDK: Installation guide
+Dart SDK: Included with Flutter SDK.
+Visual Studio Code: Recommended for development. Download it here.
+Setup
+# Clone the repository:
+sh
+git clone https://github.com/Lado-Gloria/fate_flutter_app.git
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Navigate to the project directory:
+sh
+cd fate_flutter_app
+# Install dependencies:
+sh
+flutter pub get
+sh
+flutter run
