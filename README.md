@@ -22,17 +22,26 @@ Before you start, ensure you have the following installed on your machine:
 
 # Flutter SDK: Installation guide
 Dart SDK: Included with Flutter SDK.
-Visual Studio Code: Recommended for development. Download it here.
-Setup
+
+
+# Setup
 # Clone the repository:
 sh
-git clone https://github.com/Lado-Gloria/fate_flutter_app.git
-
-# Navigate to the project directory:
+git clone https://github.com/Lado-Gloria/Fate-restaurant-flutterApp.git
+sh
+#  Navigate to the project directory:
 sh
 cd fate_flutter_app
+sh
+
 # Install dependencies:
 sh
 flutter pub get
 sh
+
+# Run the app:
+To launch the app on an emulator or connected device, using
+
+sh
 flutter run
+sh
