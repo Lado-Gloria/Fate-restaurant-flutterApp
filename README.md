@@ -26,22 +26,22 @@ Dart SDK: Included with Flutter SDK.
 
 # Setup
 # Clone the repository:
-sh
+```bash
 git clone https://github.com/Lado-Gloria/Fate-restaurant-flutterApp.git
-sh
+```
 #  Navigate to the project directory:
-sh
+```bash
 cd fate_flutter_app
-sh
+```
 
 # Install dependencies:
-sh
+```bash
 flutter pub get
-sh
+```
 
 # Run the app:
 To launch the app on an emulator or connected device, using
 
-sh
+```bash
 flutter run
-sh
+```
